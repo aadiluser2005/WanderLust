@@ -95,6 +95,10 @@ app.use((req,res,next)=>{
   next();
 });
 
+app.get("/test",(res,res)=>{
+   res.json("OK");
+})
+
 //Router calls
 app.use("/listings",listingRouter);
 app.use("/listings/:id/reviews",reviewRouter);
