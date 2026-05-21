@@ -95,7 +95,7 @@ app.use((req,res,next)=>{
   next();
 });
 
-app.get("/test",(res,res)=>{
+app.get("/test",(req,res)=>{
    res.json("OK");
 })
 
